@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true"
+    tools:context=".SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/search_frag_CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/search_frag_TabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="outsideInset"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+                app:tabIndicatorColor="@color/colorLightBlue"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/colorLightBlue"
+                app:tabTextColor="@color/colorWhite">
+
+            </android.support.design.widget.TabLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/search_frag_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/tweetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/colorLightBlue"
+        android:src="@drawable/ic_edit_black_24dp"
+        app:fab_elevationCompat="7dp"
+        app:fab_size="normal" />
+
+</RelativeLayout>
